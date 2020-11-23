@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/foot.scss";
-import { ArrayImages } from "../js/Arrayimages";
+import { ArrayImages } from "../slide/Arrayimages";
 
 function Foot() {
   const [state, setState] = useState(0);

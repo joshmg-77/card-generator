@@ -1,0 +1,43 @@
+$border:rgb(243, 82, 82);
+$background:white;
+.slide-container{
+  width:100%;
+  height:210px;
+  display:flex;
+  flex-flow:column wrap;  
+  justify-content: center;
+  margin:50px auto;
+  overflow:hidden;
+  .slide{
+    width:100%;
+    .img-slide{
+      width: 95vw;
+      height: 210px;
+      max-width: 450px;
+      max-height: auto;
+      object-fit: cover;
+      border-radius:10px;
+    }
+  }
+}
+.btn{
+  width:80px;
+  color:$border;
+  padding:8px;
+  margin-bottom:30px;
+  border:2px solid $border;
+  outline-color:$border;
+  background:$background;
+  cursor:pointer;
+  &:hover,:visited,:active,:focus,:link{
+    color:$background;
+    background:$border;
+    border:2px solid $background;
+  }
+  &:disabled{
+    color:$background;
+    background:rgba(0,0,0,0.3);
+    border:2px solid transparent;
+    cursor:default;
+  }
+}

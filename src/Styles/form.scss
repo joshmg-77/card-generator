@@ -1,0 +1,21 @@
+
+.Form{
+  width:90%;
+  max-width:800px;
+  border-bottom:2px solid rgb(241, 1, 61);
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin:20px auto;
+  padding:10px;
+  .Text,.TypeCard{
+    border-color: rgb(0, 116, 248);
+    outline-color: rgb(161, 219, 219);
+    height:30px;
+  }
+  ::-webkit-input-placeholder{
+    padding:15px;
+  }
+}
+

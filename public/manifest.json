@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React typescript",
+  "name": "Card generator react and typescript",
   "icons": [
     {
       "src": "favicon.ico",

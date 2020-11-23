@@ -1,0 +1,131 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+
+}
+
+/*Vars*/
+$fontFami:"OCR A";
+
+#card {
+  width: 95vw;
+  height: 100%;
+  max-width: 450px;
+  max-height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin:auto;
+  border: 1px solid silver;
+  color:white;
+  border-radius: 20px;
+  box-shadow: 0 15px 21px black;
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/0c/Wavy_Green_Field_in_Minimalist_Style.jpg");
+  background-position: center;
+  background-size: cover;
+  .order {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin:0;
+  }
+}
+/*Print card*/
+@media print{
+  body > *{
+    visibility: hidden;  
+  }
+  #card{
+    visibility:visible;
+  }  
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin:auto;
+  img {
+    margin-top: 7px;
+    width: 80px;
+    height: 50px;
+  }
+  .bcr {
+    width: 100px;
+    height: 30px;
+  }
+}
+.main-card {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 45px;
+  .card-chip {
+    width: 80px;
+    height: 35px;
+    background: rgb(170, 169, 169);
+    background: linear-gradient(
+      135deg,
+      rgba(150, 169, 169, 1) 15%,
+      rgba(255, 255, 255, 1) 42%,
+      rgba(255, 255, 255, 1) 51%,
+      rgba(80, 86, 87, 1) 92%
+    );
+    border-radius: 5px;
+    margin-top: 12px;
+  }
+}
+.rotate-icon {
+  font-size:15px;
+  span{
+    font-size:10px;
+  }
+  i {
+    transform: rotate(90deg);
+  }
+}
+.foot-target {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  margin-top: 15px;
+  .number-count {
+    width:auto;
+    margin-left: 50px;
+    font-size: 17px;
+    font-family: $fontFami;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    filter: contrast(100) brightness(1);
+  }
+  .expired {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: $fontFami;
+    margin: 5px 0;
+    filter: contrast(100) brightness(1);
+  }
+  .username {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-family: $fontFami;
+    backdrop-filter:brightness(1);
+  }
+  .type-target {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    padding: 15px;
+  }
+}

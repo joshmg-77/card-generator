@@ -1,5 +1,5 @@
 
-`live in [heroku](https://mycard-generator.herokuapp.com/)`
+`live in` [heroku](https://mycard-generator.herokuapp.com/)
 
 
 

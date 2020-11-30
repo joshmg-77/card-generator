@@ -27,7 +27,7 @@ const Form = (props) => {
         name="typetarget"
         className="TypeCard"
         maxLength={20}
-        placeholder="add type target"
+        placeholder="add card type"
         value={undefined}
         onChange={handled}
       />
